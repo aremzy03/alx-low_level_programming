@@ -5,7 +5,7 @@
  *The main functions returns the
  *the size of each cahracter using
  *the size of operator
- *Returns: 0
+ *Return: 0
  */
 int main(void)
 {
