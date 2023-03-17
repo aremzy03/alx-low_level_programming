@@ -9,17 +9,16 @@ int main(void)
 	char alpha;
 
 	alpha = 'a';
-	while (alpha <= 'z')
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if (alpha == 'e')
+		if (alpha = 'e')
 		{
 			continue;
-		} else if (alpha == 'q')
+		} else if (alpha = 'q')
 		{
 			continue;
 		}
 		putchar(alpha);
-		alpha++;
 	}
 	putchar('\n');
 	return (0);
