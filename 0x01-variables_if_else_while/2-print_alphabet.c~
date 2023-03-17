@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+	char alpha;
+	alpha = 'a';
+	while (alpha <= 'z')
+	{
+		putchar(alpha, "/n");
+	}
+	return (0);
+}
