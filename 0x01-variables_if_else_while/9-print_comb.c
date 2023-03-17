@@ -11,11 +11,15 @@ int main(void)
 	comb = 0;
 	while (comb < 10)
 	{
-		putchar(comb + '0');
-		putchar(',');
-		putchar(' ');
+		if (comb == 9)
+		{
+			putchar(comb + '0');
+		} else {
+			putchar(comb + '0');
+			putchar(',');
+			putchar(' ');
+		}
 		comb++;
 	}
-	putchar('\b');
 	return (0);
 }
