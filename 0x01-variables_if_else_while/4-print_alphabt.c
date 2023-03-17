@@ -11,10 +11,10 @@ int main(void)
 	alpha = 'a';
 	while (alpha <= 'z')
 	{
-		if (alpha == 'q')
+		if (alpha == 'e')
 		{
 			continue;
-		} else if (alpha == 'e')
+		} else if (alpha == 'q')
 		{
 			continue;
 		}
