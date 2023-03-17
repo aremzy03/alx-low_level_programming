@@ -11,16 +11,14 @@ int main(void)
 	comb = 0;
 	while (comb < 10)
 	{
-		if (comb == 9)
+		putchar(comb + '0');
+		if (comb != 9)
 		{
-			putchar(comb + '0');
-		} else
-		{
-			putchar(comb + '0');
 			putchar(',');
 			putchar(' ');
 		}
 		comb++;
 	}
+	putchar('\n');
 	return (0);
 }
