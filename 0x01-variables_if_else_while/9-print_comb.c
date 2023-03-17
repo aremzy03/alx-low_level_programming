@@ -14,7 +14,8 @@ int main(void)
 		if (comb == 9)
 		{
 			putchar(comb + '0');
-		} else {
+		} else
+		{
 			putchar(comb + '0');
 			putchar(',');
 			putchar(' ');
