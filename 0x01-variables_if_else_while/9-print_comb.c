@@ -16,5 +16,6 @@ int main(void)
 		putchar(' ');
 		comb++;
 	}
+	putchar('\b');
 	return (0);
 }
