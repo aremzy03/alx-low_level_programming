@@ -11,10 +11,11 @@ int main(void)
 	alpha = 'a';
 	for (alpha = 'a'; alpha <= 'z'; alpha++)
 	{
-		if (alpha = 'e')
+		if (alpha == 'e')
 		{
 			continue;
-		} else if (alpha = 'q')
+		}
+		if (alpha == 'q')
 		{
 			continue;
 		}
