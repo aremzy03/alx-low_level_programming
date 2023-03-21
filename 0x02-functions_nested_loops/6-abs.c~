@@ -1,0 +1,15 @@
+#include "main.h"
+#include <stdlib.h>
+/**
+ *_abs - prints the absolute number of an integer
+ *@int: is the parameter that is a any called will be an integer
+ *
+ *Return: 0
+ */
+int _abs(int num)
+{
+	int absolute;
+
+	absolute = abs(num);
+	return (absolute);
+}
