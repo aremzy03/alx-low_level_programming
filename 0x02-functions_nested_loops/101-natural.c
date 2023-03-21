@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ *main - main function
+ *
+ *Return: 0
+ */
 int main(void)
 {
 	int mult;
@@ -7,13 +12,11 @@ int main(void)
 	result = 0;
 	for (mult = 0; mult < 1024; mult++)
 	{
-		if (mult % 3 != 0 || mult % 5 != 0)
+		if (mult % 3 == 0 || mult % 5 == 0)
 		{
-			continue;
+			result += mult;
 		}
-		result+=mult;
 	}
 	printf("%d\n", result);
 	return (0);
 }
-		
