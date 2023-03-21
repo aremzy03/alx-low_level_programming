@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *print_alphabet - display all the alphabets
  *
@@ -9,8 +10,8 @@ void print_alphabet(void)
 
 	while (alpha <= 'z')
 	{
-		putchar(alpha);
+		_putchar(alpha);
 		alpha++;
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
+}
