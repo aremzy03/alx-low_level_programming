@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int num;
+	int i;
 
-	num = 98;
+	i = 0;
 	positive_or_negative(num);
 	return (0);
 }
