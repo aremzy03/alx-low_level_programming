@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(void)
+{
+	int to100;
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0)
+		{
+			i = Fizz;
+		}
+		if (i % 5 == 0)
+		{
+			i = Buzz;
+		}
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			i = FizzBuzz;
+		}
+	}
+	printf("%d ", i)
