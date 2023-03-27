@@ -1,0 +1,26 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+void puts_half(char *str)
+{
+	unsigned long int i;
+	int len, half_len;
+
+	len = strlen(str);
+	half_len = ceil(len);
+	if (strlen(str) % 2 != 0)
+	{
+		for (i >= (len - 1) / 2; i <= len; i++)
+		{
+			printf("%c", str[i]);
+		}
+	}
+	else
+	{
+		for (i >= half_len; i <= len; i++)
+		{
+			printf("%c", str[i]);
+		}
+	}
+}		
