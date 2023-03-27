@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 /**
  *puts_half - puts half of a string array
  *@str: the string to be printed
@@ -18,7 +17,7 @@ void puts_half(char *str)
 	half_lenodd = (len - 1) / 2;
 	if (strlen(str) % 2 != 0)
 	{
-		for (i = half_lenodd; i <= len - 1; i++)
+		for (i = half_lenodd - 1; i <= len - 1; i++)
 		{
 			printf("%c", str[i]);
 		}
