@@ -10,11 +10,19 @@
 void reverse_array(int *a, int n)
 {
 	int i;
+	int temp;
 
-	i = n - 1;
-	while (i >= 0)
+	i = 0;
+	while (i < n / 2)
 	{
-		if (i == 0)
+		temp = a[i];
+		a[i] = a[n - i - 1];
+		a[n - i - 1] = temp;
+		i++;
+	}
+	for (i = 0; i < n; i++)
+	{
+		if (i == n - 1)
 		{
 			printf("%d", a[i]);
 		}
@@ -22,7 +30,6 @@ void reverse_array(int *a, int n)
 		{
 			printf("%d, ", a[i]);
 		}
-		i--;
 	}
 	printf("\n");
 }
