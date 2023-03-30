@@ -1,16 +1,20 @@
 #include "main.h"
-#include <ctype.h>
-#include <string.h>
-char *string_toupper(char *c)
+/**
+ *string_toupper - converts a string to uppercase
+ *@str: the str to convert to upper case
+ *
+ *Return: the new string
+ */
+char *string_toupper(char *str)
 {
 	int i;
-	int size;
 
-	size = strlen(c);
-	i = 0;
-	while (i < size - 1)
+	for (i = 0; str[i] != '\0' ; i++)
 	{
-		return (toupper(c[i]));
-		i++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] -= 32;
+		}
 	}
+	return (str);
 }
