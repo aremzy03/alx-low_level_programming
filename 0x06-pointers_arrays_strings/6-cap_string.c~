@@ -1,0 +1,54 @@
+#include "main.h"
+char *cap_string(char *src)
+{
+	int i;
+
+	for (i = 0; src[i]; i++)
+	{
+		switch (src[i])
+		{
+		case ' ':
+			src[i + 1] -= 32;
+			break;
+		case '9':
+			src[i + 1] -=32;
+			break;
+		case '\n':
+			src[i + 1] -=32;
+			break;
+		case ',':
+			src[i + 1] -=32;
+			break;
+		case ';':
+			src[i + 1] -=32;
+			break;
+		case '.':
+			src[i + 1] -= 32;
+			break;
+		case '!':
+			src[i + 1] -= 32;
+			break;
+		case '?':
+			src[i + 1] -= 32;
+			break;
+		case '"':
+			src[i + 1] -= 32;
+			break;
+		case '(':
+			src[i + 1] -= 32;
+			break;
+		case ')':
+			src[i + 1] -= 32;
+			break;
+		case '{':
+			src[i + 1] -= 32;
+			break;
+		case '}':
+			src[i + 1] -= 32;
+			break;
+		default :
+			;
+		}
+	}
+	return (src);
+}
