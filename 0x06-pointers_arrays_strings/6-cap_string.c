@@ -1,10 +1,16 @@
 #include "main.h"
 #include <string.h>
+/**
+ *cap_string - capsulate every word
+ *@c: string to be capsulated
+ *
+ *Return: the capsulated string
+ */
 char *cap_string(char *c)
 {
-	long unsigned int i;
+        int i;
 
-	for (i = 0; i < strlen(c); i++)
+	for (i = 0; c[i] != '\0'; i++)
 	{
 		switch (c[i])
 		{
