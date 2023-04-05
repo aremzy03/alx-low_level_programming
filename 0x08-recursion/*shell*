@@ -1,0 +1,184 @@
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:4:11: error: passing argument 1 of ‘_putchar’ makes integer from pointer without a cast [-Werror=int-conversion]
+    4 |  _putchar(s);
+      |           ^
+      |           |
+      |           char *
+In file included from 0-puts_recursion.c:1:
+main.h:1:19: note: expected ‘char’ but argument is of type ‘char *’
+    1 | int _putchar(char c);
+      |              ~~~~~^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:8:10: error: implicit declaration of function ‘strlen’ [-Werror=implicit-function-declaration]
+    8 |  if (n < strlen(s))
+      |          ^~~~~~
+0-puts_recursion.c:8:10: error: incompatible implicit declaration of built-in function ‘strlen’ [-Werror]
+0-puts_recursion.c:2:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    1 | #include "main.h"
+  +++ |+#include <string.h>
+    2 | void _puts_recursion(char *s)
+0-puts_recursion.c:8:8: error: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Werror=sign-compare]
+    8 |  if (n < strlen(s))
+      |        ^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:9:8: error: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Werror=sign-compare]
+    9 |  if (n < strlen(s))
+      |        ^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ ./0-puts_recursion 
+Puvagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:16: error: expected ‘;’ before ‘}’ token
+   13 |  _putchar('\n')
+      |                ^
+      |                ;
+   14 | }
+      | ~               
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ ./0-puts_recursion 
+Pu
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ ./0-puts_recursion 
+Pu
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:28: error: passing argument 1 of ‘_puts_recursion’ makes pointer from integer without a cast [-Werror=int-conversion]
+   12 |   _putchar(_puts_recursion(n));
+      |                            ^
+      |                            |
+      |                            long unsigned int
+0-puts_recursion.c:3:28: note: expected ‘char *’ but argument is of type ‘long unsigned int’
+    3 | void _puts_recursion(char *s)
+      |                      ~~~~~~^
+0-puts_recursion.c:12:12: error: invalid use of void expression
+   12 |   _putchar(_puts_recursion(n));
+      |            ^~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:29: error: passing argument 1 of ‘_puts_recursion’ makes pointer from integer without a cast [-Werror=int-conversion]
+   12 |   _putchar(_puts_recursion(s[n]));
+      |                            ~^~~
+      |                             |
+      |                             char
+0-puts_recursion.c:3:28: note: expected ‘char *’ but argument is of type ‘char’
+    3 | void _puts_recursion(char *s)
+      |                      ~~~~~~^
+0-puts_recursion.c:12:12: error: invalid use of void expression
+   12 |   _putchar(_puts_recursion(s[n]));
+      |            ^~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:12: error: invalid use of void expression
+   12 |   _putchar(_puts_recursion(s));
+      |            ^~~~~~~~~~~~~~~~~~
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ \gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:32: error: passing argument 1 of ‘_puts_recursion’ makes pointer from integer without a cast [-Werror=int-conversion]
+   13 |   recursion = _puts_recursion(s[n]);
+      |                               ~^~~
+      |                                |
+      |                                char
+0-puts_recursion.c:3:28: note: expected ‘char *’ but argument is of type ‘char’
+    3 | void _puts_recursion(char *s)
+      |                      ~~~~~~^
+0-puts_recursion.c:13:13: error: void value not ignored as it ought to be
+   13 |   recursion = _puts_recursion(s[n]);
+      |             ^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:31: error: expected expression before ‘char’
+   13 |   recursion = _puts_recursion(char *s);
+      |                               ^~~~
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:13: error: void value not ignored as it ought to be
+   13 |   recursion = _puts_recursion(s);
+      |             ^
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:11:11: error: passing argument 1 of ‘_putchar’ makes integer from pointer without a cast [-Werror=int-conversion]
+   11 |  _putchar(s)
+      |           ^
+      |           |
+      |           char *
+In file included from 0-puts_recursion.c:1:
+main.h:1:19: note: expected ‘char’ but argument is of type ‘char *’
+    1 | int _putchar(char c);
+      |              ~~~~~^
+0-puts_recursion.c:11:13: error: expected ‘;’ before ‘}’ token
+   11 |  _putchar(s)
+      |             ^
+      |             ;
+   12 | }
+      | ~            
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:7:5: error: ‘n’ is used uninitialized in this function [-Werror=uninitialized]
+    7 |  if (n >= strlen(s))
+      |     ^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ ./0-puts_recursion 
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ ./0-puts_recursion 
+Pvagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:18: error: expected expression before ‘char’
+   13 |  _puts_recursion(char *s);
+      |                  ^~~~
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:13:18: error: expected expression before ‘char’
+   13 |  _puts_recursion(char *s[n]);
+      |                  ^~~~
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:19: error: passing argument 1 of ‘_puts_recursion’ makes pointer from integer without a cast [-Werror=int-conversion]
+   12 |  _puts_recursion(s[n + 1]);
+      |                  ~^~~~~~~
+      |                   |
+      |                   char
+0-puts_recursion.c:3:28: note: expected ‘char *’ but argument is of type ‘char’
+    3 | void _puts_recursion(char *s)
+      |                      ~~~~~~^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ 
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:2: error: implicit declaration of function ‘_putschar’; did you mean ‘_putchar’? [-Werror=implicit-function-declaration]
+   12 |  _putschar(s[n])
+      |  ^~~~~~~~~
+      |  _putchar
+0-puts_recursion.c:12:17: error: expected ‘;’ before ‘_puts_recursion’
+   12 |  _putschar(s[n])
+      |                 ^
+      |                 ;
+   13 |  _puts_recursion(s[n + 1]);
+      |  ~~~~~~~~~~~~~~~ 
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-main.c 0-puts_recursion.c -o 0-puts_recursion
+0-puts_recursion.c: In function ‘_puts_recursion’:
+0-puts_recursion.c:12:2: error: implicit declaration of function ‘_putschar’; did you mean ‘_putchar’? [-Werror=implicit-function-declaration]
+   12 |  _putschar(s[n]);
+      |  ^~~~~~~~~
+      |  _putchar
+0-puts_recursion.c:13:19: error: passing argument 1 of ‘_puts_recursion’ makes pointer from integer without a cast [-Werror=int-conversion]
+   13 |  _puts_recursion(s[n + 1]);
+      |                  ~^~~~~~~
+      |                   |
+      |                   char
+0-puts_recursion.c:3:28: note: expected ‘char *’ but argument is of type ‘char’
+    3 | void _puts_recursion(char *s)
+      |                      ~~~~~~^
+cc1: all warnings being treated as errors
+vagrant@ubuntu-focal:~/ALX-SE/sprint-1/alx-low_level_programming/0x08-recursion$ 
