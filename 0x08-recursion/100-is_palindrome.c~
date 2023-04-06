@@ -1,0 +1,18 @@
+#include "main.h"
+#include <stdio.h>
+char palindrome(char *s)
+{
+	if (*s == '\0')
+		return ('\0');
+	palindrome(s + 1);
+	putchar (*s);
+	return(*s);
+}
+		
+int is_palindrome(char *s)
+{
+	if (*s == palindrome(s))
+		return (1);
+	
+	return (0);
+}
