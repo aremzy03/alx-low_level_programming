@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ *check - prints number of coins needed
+ *@numcoins: the number of coins
+ *@change: the change gotten frm main func
+ *@coins: the coins 25 - 1
+ */
+void check(int numcoins, int change, int coins[5]);
+/**
  *main - prints the number of coins needed for change
  *@argc: the number of arguements
  *@argv: the arguement lists
@@ -13,7 +20,6 @@ int main(int argc, char *argv[])
 	int numcoins;
 	int change;
 	int i;
-	int mod0, mod1, mod2, mod3, mod4;
 
 	if (argc != 2)
 	{
@@ -30,6 +36,19 @@ int main(int argc, char *argv[])
 		numcoins += (change / coins[i]);
 		break;
 	}
+	check(numcoins, change, coins);
+	return (0);
+}
+/**
+ *check - prints no. of coins
+ *@numcoins: no. of coins
+ *@change: amount of change
+ *@coins: coin value
+ */
+void check(int numcoins, int change, int coins[5])
+{
+	int mod0, mod1, mod2, mod3, mod4;
+
 	mod0 = change % coins[0];
 	mod1 = mod0 % coins[1];
 	mod2 = mod1 % coins[2];
@@ -61,5 +80,4 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	return (0);
 }
