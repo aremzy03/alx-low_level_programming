@@ -1,0 +1,22 @@
+#include "main.h"
+#include <string.h>
+#include <stdlib.h>
+char *str_concat(char *s1, char *s2)
+{
+	int size = strlen(s1) + strlen(s2) + 1;
+	char *ptr_concat;
+	unsigned long int i, j;
+
+	ptr_concat = malloc(size);
+	if (ptr_str == NULL)
+		return (NULL);
+	for (i = 0; i <= strlen(s1); i++)
+	{
+		ptr_concat[i] = s1[i];
+	}
+	for (i = strlen(s1) + 1, j = 0; i < size, j <= strlen(s2); i++, j++)
+	{
+		ptr_concat[i] = s2[j];
+	}
+	return (ptr_concat);
+}
