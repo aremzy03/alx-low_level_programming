@@ -21,6 +21,5 @@ char *create_array(unsigned int size, char c)
 	{
 		arr_ptr[i] = c;
 	}
-	
 	return (arr_ptr);
 }
