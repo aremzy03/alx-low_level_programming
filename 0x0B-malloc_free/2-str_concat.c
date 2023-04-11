@@ -14,10 +14,6 @@ char *str_concat(char *s1, char *s2)
 	char *ptr_concat;
 	unsigned long int i, j;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 	ptr_concat = malloc(size);
 	if (ptr_concat == NULL)
 		return (NULL);
