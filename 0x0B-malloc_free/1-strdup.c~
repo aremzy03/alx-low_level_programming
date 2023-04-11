@@ -1,0 +1,15 @@
+#include "main.h"
+#include <string.h>
+#include <stdlib.h>
+char *_strdup(char *str)
+{
+	int i, j;
+	char *ptr_str;
+
+	ptr_str = malloc(strlen(str));
+	for (i = 0; i < ptr_str; i++)
+	{
+		ptr_str[i] = str[i];
+	}
+	return (ptr_str);
+}
