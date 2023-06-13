@@ -5,7 +5,7 @@
  *_strdup - returns a copy of str
  *@str: the string to be copied
  *
- *Return: the copy or NULL
+ *Return: the copy of string or NULL
  */
 char *_strdup(char *str)
 {
