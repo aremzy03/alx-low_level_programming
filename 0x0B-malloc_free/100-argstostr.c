@@ -3,29 +3,26 @@
 #include <string.h>
 char *argstostr(int ac, char **av)
 {
-	int i,j,k = 0, l = 0;
-	char *av_ptr;
+	int i;
+	char **av_ptr;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
+	
+	av_ptr = malloc(ac * sizeof(char *));
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
-			l++;
+		av_ptr[i] = malloc(strlen(av[i]) * sizeof(char));
 	}
-	l += ac;
-	
-	av_ptr = malloc((l + 1) * sizeof(char));
-	if (av_ptr == NULL)
+	if (*av_ptr == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
-		{
-			av_ptr[k] = av[i][j];
-		}	k++;
+		av_ptr[i] = av[i];
 	}
-	if (av_ptr[k] == '\0')
-		av_ptr[k++] = '\n';
-	return (av_ptr);
+	for (i = 0; i < ac; i++)
+	{
+		free(av_ptr[i]);
+	}
+	return (*av_ptr);
 }
