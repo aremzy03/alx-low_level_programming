@@ -1,6 +1,11 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+/**
+ *print_strings - prints a string with a seperator
+ *@separator: the character that seperates the numbers
+ *@n: the number of string
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
