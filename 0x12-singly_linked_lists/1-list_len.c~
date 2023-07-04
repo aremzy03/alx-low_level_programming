@@ -1,0 +1,15 @@
+#include "lists.h"
+#include <stdio.h>
+size_t list_len(const list_t *h)
+{
+	int counter;
+	const list_t *ptr;
+
+	counter = 0;
+	ptr = h;
+	while (ptr != NULL)
+	{
+		counter++;
+	}
+	return (counter);
+}
