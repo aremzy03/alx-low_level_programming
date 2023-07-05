@@ -1,0 +1,14 @@
+#include "lists.c"
+size_t listint_len(const listint_t *h)
+{
+	int counter;
+	const listint_t *ptr;
+
+	counter = 0;
+	while (ptr != NULL)
+	{
+		counter++;
+		ptr = ptr->next;
+	}
+	return (counter);
+}
