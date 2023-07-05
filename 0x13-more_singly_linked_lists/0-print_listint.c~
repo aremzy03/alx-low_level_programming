@@ -1,0 +1,15 @@
+#include "lists.h"
+size_t print_listint(const listint_t *h)
+{
+	const listint_t *ptr;
+	int counter;
+	
+	ptr = h;
+	while (ptr != NULL)
+	{
+		counter++;
+		printf("%d", ptr->n);
+		ptr = ptr->next;
+	}
+	return (counter);
+}
