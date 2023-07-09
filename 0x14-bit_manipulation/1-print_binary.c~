@@ -1,0 +1,20 @@
+#include "main.h"
+#include <stdio.h>
+void print_binary(unsigned long int n)
+{
+	int size = sizeof(int) * 8;
+	int cover = 1 << (size - 1);
+
+	if (n == 0)
+		_putchar('0');
+	_putchar('\n');
+	while (cover > 0)
+	{
+		if ((n & cover) == 0)
+			_putchar("0");
+		else
+			_putchar("1");
+		mask >>=1;
+	}
+	_putchar('\n');
+}
