@@ -1,6 +1,12 @@
 #include "main.h"
 #include <string.h>
 #include <math.h>
+/**
+ *binary_to_unit - converts binary to decimal
+ *@b: the value in binary to be converted
+ *
+ *return: the converted value
+ */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int length;
