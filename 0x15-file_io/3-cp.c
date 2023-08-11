@@ -4,12 +4,12 @@
 #include "main.h"
 #include <string.h>
 /**
- *create_buffer - creates a buffer and allocates memory of 1024bytes
+ *create_buff - creates a buffer and allocates memory of 1024bytes
  *@file: file of buffer to be allocated
  *
  *Return: the buffer
  */
-char *create_buffer(char *file)
+char *create_buff(char *file)
 {
 	char *buffer;
 
@@ -61,7 +61,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	Buff = create_buffer(av[2]);
+	Buff = create_buff(av[2]);
 	src = open(av[1], O_RDONLY);
 	des = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(src, Buff, 1024);
