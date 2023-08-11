@@ -26,7 +26,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	des = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0665);
+	des = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (des == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: can't write to %s\n", av[2]);
@@ -36,6 +36,7 @@ int main(int ac, char **av)
 	{
 		write(des, Buff, strlen(Buff));
 	}
+	write(des, "\n", 1);
 	clse = close(src);
 	if (clse == -1)
 	{
