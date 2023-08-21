@@ -6,26 +6,20 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int size = sizeof(int) * 8;
-	unsigned int cover = 1 << (size - 1);
-	unsigned int beginning = 1;
+	int i, j = 0;
+	unsigned long int num;
 
-	if (n == 0)
-		_putchar('0');
-	_putchar('\n');
-	while (cover > 0)
+	for (i = 63; i >= 0; i--)
 	{
-		if ((n & cover) == 0)
-		{
-			if (!beginning)
-				_putchar('0');
-		}
-		else
+		num = n >> i;
+		if (num & 1)
 		{
 			_putchar('1');
-			beginning = 0;
+			j++;
 		}
-		cover >>= 1;
+		else if (j)
+			_putchar('0');
 	}
-	_putchar('\n');
+	if (!j)
+		_putchar('0');
 }

@@ -1,0 +1,7 @@
+#include "maim.h"
+int get_endianness(void)
+{
+	unsigned int c = 1;
+	char *c = (char *) &c;
+	return (*c);
+}
