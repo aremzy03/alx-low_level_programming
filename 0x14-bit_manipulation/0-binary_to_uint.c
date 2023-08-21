@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	int count;
 
 	decimal = 1;
-	if (b == NULL)
+	if (!b)
 		return (0);
 	for (count = 0; b[count]; count++)
 	{
