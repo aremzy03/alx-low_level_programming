@@ -25,28 +25,20 @@ size_t dlistint_len(const dlistint_t *h)
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	dlistint_t *temp;
 	unsigned int count = 0;
-	size_t length;
 
-	length = dlistint_len(head);
 	if (head == NULL)
 	{
 		return (NULL);
 	}
-	if (index > length)
+	while (head != NULL)
 	{
-		return (NULL);
-	}
-	temp = head;
-	while (temp != NULL)
-	{
-		count++;
-		temp = temp->next;
 		if (count == index)
 		{
-			break;
+			return (head);
 		}
+		count++;
+		head = head->next;
 	}
-	return (temp);
+	return (NULL);
 }
