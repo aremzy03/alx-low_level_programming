@@ -1,4 +1,5 @@
 #include "main.h"
+#include <unistd.h>
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -94,7 +95,7 @@ int _strlen(char *s)
  */
 void _puts(char *s)
 {
-	puts(s);
+
 }
 /**
  *_strcpy - copies string to dest
@@ -105,7 +106,7 @@ void _puts(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-	return (strcpy(dest, src));
+
 }
 /**
  * _atoi - convert a string into an integer.
