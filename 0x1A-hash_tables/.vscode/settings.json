@@ -1,0 +1,8 @@
+{
+    "editor.insertSpaces": false,
+    "editor.tabSize": 6,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.defaultFoldingRangeProvider": null,
+    "editor.detectIndentation": true,
+    "editor.tabCompletion": "on"
+}
